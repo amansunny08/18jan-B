@@ -1,0 +1,16 @@
+name: myworkflow
+on: push
+jobs:
+    my-first-job:
+        runs-on: ubuntu-latest
+        steps:
+           - name: checkout repo
+             uses: action/checkout@v3
+           - name: run linux command
+             run: |
+                ls -lrt
+                echo "Hello world -- myworkfrom"
+           - name: run python script
+             run: python abc.py     
+
+             
