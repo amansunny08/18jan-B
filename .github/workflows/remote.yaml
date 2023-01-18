@@ -1,0 +1,9 @@
+name: remote-call 
+on: 
+   workflow_call:
+jobs:
+   remote-call-demo:
+      runs-on: ubuntu-latest
+      steps:
+        - name: run linux command
+          run: echo "Hello world --remote-job"
